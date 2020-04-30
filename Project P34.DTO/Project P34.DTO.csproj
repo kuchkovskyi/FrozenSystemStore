@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Project_P34.DTO</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Project P34.DataAccess\Project P34.DataAccess.csproj" />
+    <ProjectReference Include="..\Project P34.Domain\Project P34.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

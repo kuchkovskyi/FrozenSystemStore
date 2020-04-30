@@ -1,0 +1,92 @@
+.col-md-4, .col-md-6, .col-md-2  { margin-top: 1%; }
+
+.img-fluid {
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+  border: 1px solid white;
+}
+
+.p-params {
+  color: #29586c;
+  font-weight: 600;
+}
+
+.data {
+  background-color: #29586c;
+  color: #b3e1ee;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.table-borderless {
+  background-color: #b3e1ee;
+  color: #29586c;
+  border-radius: 10px;
+  border: #29586c 1px solid;
+  border-collapse: separate;
+}
+
+tr, th, td { border-top: 1px solid #29586c; }
+
+ul { list-style-type: none; }
+
+.btn {
+  background-color: #b3e1ee;
+  color: #29586c;
+  border: 1px solid #29586c;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #94c0c2;
+  border: 1px #2a4158 solid;
+  text-decoration: underline;
+  color: #2a4158;
+}
+
+.btn:focus { box-shadow: #2a4158 0px 0px 20px; }
+
+.fa {
+  color: #29586c;
+  margin-top: 10px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.fa:hover {
+  color: #b3e1ee;
+  background-color: #2a4158;
+}
+
+.bb {
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  color: #29586c;
+  background-color: #b3e1ee;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+.images {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.imgs {
+  width: 700px;
+  height: 350px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+img:hover { border: 1px solid #29586c; }
+
+hr { background-color: #29586c !important; width: 80% !important; }

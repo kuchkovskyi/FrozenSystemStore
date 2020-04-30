@@ -1,0 +1,14 @@
+.error {
+  text-align: center;
+  margin-top: 225px;
+  color: #29586c;
+  font-weight: 200;
+}
+
+.text {
+  text-align: center;
+  color: #29586c;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 225px;
+}

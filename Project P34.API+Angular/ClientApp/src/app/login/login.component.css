@@ -1,0 +1,81 @@
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #b3e1ee;
+}
+
+.login {
+  color: #b3e1ee;
+  padding: 0px 20px 15px 20px;
+  text-decoration: underline;
+  font-weight: 200;
+  margin: 0px !important;
+}
+
+.container {
+  width: 450px;
+  height: 500px;
+  background-color: rgba(41, 88, 108, 0.7);
+  box-shadow: 0 -5px 0 #2ca8c6;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.lbl {
+  float: left;
+}
+
+.form-control:focus {
+  box-shadow: #b3e1ee 0px 0px 20px;
+  border: solid 1px #2a4158;
+}
+
+.bbtn {
+  padding: 13px 30px;
+  margin: 5px 0px 20px 0px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #2ca8c6;
+  border: none;
+  border-bottom: 4px solid #6ee9fd;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.bbtn:hover {
+  transition: all 0.5px;
+  background-color: #b3e1ee;
+  color: #2c536c;
+  border-bottom: 4px solid #2ca8c6;
+}
+
+.bbtn:focus {
+  box-shadow: #2a4158 0px 0px 20px;
+  border-radius: 10px;
+}
+
+.fa {
+  color: #b3e1ee;
+  padding: 10px;
+  margin: 10px;
+}
+
+.fa-user-circle-o {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.fa-user-circle-o:hover { color: #b3e1ee;}
+
+.fa-facebook-square:hover { color: #2c536c; background-color: white; border-radius: 10px; }
+
+.fa-twitter-square:hover { color: #1ea7f5; background-color: white; border-radius: 10px; }
+
+.fa-google:hover { color: #ec3e32; background-color: white; border-radius: 10px; }

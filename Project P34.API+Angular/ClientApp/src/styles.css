@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~angular-notifier/styles";
+
+/* Provide sufficient contrast against white background */
+
+body {
+  background-image: url(https://image.freepik.com/free-photo/_37787-2289.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+ }
+
+ ::selection {
+   background-color: #29586c;
+   color: #b3e1ee;
+ }
+
+ ::-webkit-scrollbar-button {
+   background-image: url();
+   background-repeat: no-repeat;
+   width: 6px;
+   height: 0px;
+ }
+
+ ::-webkit-scrollbar-track{
+   background-color: #b3e1ee;
+   box-shadow: 0px 0px 2px #b3e1ee inset;
+ }
+
+ ::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   background-color: #f2f5f7;
+   box-shadow: 0px 1px 1px #f2f5f7 inset;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+   -webkit-border-radius: 5px;
+   border-radius: 10px;
+   background-color: #89bdd6;
+   box-shadow: 0px 1px 1px #89bdd6 inset;
+ }
+
+ ::-webkit-resizer {
+   background-image: url();
+   background-repeat: no-repeat;
+   width: 7px;
+   height: 0px;
+ }
+
+ ::-webkit-scrollbar {
+   width: 9px;
+ }
+
