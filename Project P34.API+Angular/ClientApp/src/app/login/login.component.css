@@ -61,6 +61,11 @@ a:hover {
   border-radius: 10px;
 }
 
+.bbtn:active {
+  box-shadow: #2a4158 0px 0px 20px;
+  border-radius: 10px;
+}
+
 .fa {
   color: #b3e1ee;
   padding: 10px;

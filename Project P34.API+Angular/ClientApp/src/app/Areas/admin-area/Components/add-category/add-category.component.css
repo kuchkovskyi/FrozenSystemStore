@@ -44,6 +44,11 @@
   color: #2a4158;
 }
 
+.btn:active {
+  box-shadow: #2a4158 0px 0px 20px;
+  border-radius: 10px;
+}
+
 .form-control{
   color: black;
   border-radius: 7px;

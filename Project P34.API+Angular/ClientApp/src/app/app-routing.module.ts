@@ -18,9 +18,11 @@ import { ProductsComponent } from './products/products.component';
 import { AddProductComponent } from './Areas/admin-area/Components/add-product/add-product.component';
 import { EditProductComponent } from './Areas/admin-area/Components/edit-product/edit-product.component';
 import { ViewProductComponent } from './products/view-product/view-product.component';
+import { ProductsListViewComponent } from './Areas/admin-area/Components/products-list-view/products-list-view.component';
 
 import { AddCategoryComponent } from './Areas/admin-area/Components/add-category/add-category.component';
 import { EditCategoryComponent } from './Areas/admin-area/Components/edit-category/edit-category.component';
+import { CategoriesListViewComponent } from './Areas/admin-area/Components/categories-list-view/categories-list-view.component';
 
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
@@ -68,24 +70,36 @@ const routes: Routes = [
         component: UserManagerComponent,
         pathMatch: 'full'
       },
+
       {
-        path: 'addProduct',
+        path: 'add-product',
         component: AddProductComponent,
         pathMatch: 'full'
       },
       {
-        path: 'editProduct',
+        path: 'edit-product',
         component: EditProductComponent,
         pathMatch: 'full'
       },
       {
-        path: 'addCategory',
+        path: 'products-list-view',
+        component: ProductsListViewComponent,
+        pathMatch: 'full'
+      },
+
+      {
+        path: 'add-category',
         component: AddCategoryComponent,
         pathMatch: 'full'
       },
       {
-        path: 'editCategory',
+        path: 'edit-category',
         component: EditCategoryComponent,
+        pathMatch: 'full'
+      },
+      {
+        path: 'categories-list-view',
+        component: CategoriesListViewComponent,
         pathMatch: 'full'
       }
     ]

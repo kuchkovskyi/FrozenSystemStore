@@ -8,7 +8,7 @@
       </a>
     </li>
 
-    <li class="nav-item srch">
+    <li *ngIf="!isAdmin" class="nav-item srch">
       <div>
         <input class="form-control ab" type="text" placeholder="What are you looking for?">
         <i class="fa fa-search ab" aria-hidden="true" title="Search"></i>
@@ -18,19 +18,19 @@
     <li class="nav-item">
       <div class="block">
 
-        <a [routerLink]="['/help']" class="nav-link fr" title="FAQ">
+       <!--User Logges in-->
+        <a *ngIf="!isAdmin && isLoggedIn" [routerLink]="['/help']" class="nav-link fr" title="FAQ">
           <i class="fa fa-question" aria-hidden="true"></i>
         </a>
 
-        <a [routerLink]="['/favorites']" class="nav-link fr">
+        <a *ngIf="!isAdmin && isLoggedIn" [routerLink]="['/favorites']" class="nav-link fr">
           <i class="fa fa-heart" aria-hidden="true" title="Wish"></i>
         </a>
 
-        <a [routerLink]="['/cart']"class="nav-link fr">
+        <a *ngIf="!isAdmin && isLoggedIn" [routerLink]="['/cart']"class="nav-link fr">
           <i class="fa fa-shopping-cart" aria-hidden="true" title="Cart"></i>
         </a>
 
-      <!--User Logges in-->
         <a *ngIf="isLoggedIn === false" [routerLink]="['/register']" class="nav-link fr">
           <i class="fa fa-male" aria-hidden="true" title="Registration"></i>
         </a>
@@ -40,7 +40,7 @@
         </a>
 
       <!--Admin Logged in-->
-        <a *ngIf="isAdmin === true" class="nav-link fr" [routerLink]="['admin-panel']" routerLinkActive="router-link-active" >
+        <a *ngIf="isAdmin" class="nav-link fr" [routerLink]="['admin-panel']" routerLinkActive="router-link-active" >
           <i class="fa fa-user-secret" aria-hidden="true" title="Admin panel"></i>
         </a>
 

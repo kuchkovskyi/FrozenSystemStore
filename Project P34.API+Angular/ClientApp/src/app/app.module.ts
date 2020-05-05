@@ -19,12 +19,14 @@ import { ProductItemComponent } from './products/product-list/product-item/produ
 import { AddProductComponent } from './Areas/admin-area/Components/add-product/add-product.component';
 import { EditProductComponent } from './Areas/admin-area/Components/edit-product/edit-product.component';
 import { ViewProductComponent } from './products/view-product/view-product.component';
+import { ProductsListViewComponent } from './Areas/admin-area/Components/products-list-view/products-list-view.component';
 
 import { CategoriesComponent } from './categories/categories.component';
 import { CategotyListComponent } from './categories/categoty-list/categoty-list.component';
 import { CategoryItemComponent } from './categories/categoty-list/category-item/category-item.component';
 import { AddCategoryComponent } from './Areas/admin-area/Components/add-category/add-category.component';
 import { EditCategoryComponent } from './Areas/admin-area/Components/edit-category/edit-category.component';
+import { CategoriesListViewComponent } from './Areas/admin-area/Components/categories-list-view/categories-list-view.component';
 
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
@@ -53,32 +55,43 @@ const notifierOptions: NotifierOptions  = {
 @NgModule({
    declarations: [
       AppComponent,
+
       HeaderComponent,
       FooterComponent,
       ErrorPageComponent,
+
       ProductsComponent,
-      CategoriesComponent,
+      ProductListComponent,
+      ProductItemComponent,
       AddProductComponent,
       EditProductComponent,
       ViewProductComponent,
-      AddCategoryComponent,
-      EditCategoryComponent,
-      QuestionsComponent,
-      ProductListComponent,
-      ProductItemComponent,
+      ProductsListViewComponent,
+
+      CategoriesComponent,
       CategotyListComponent,
       CategoryItemComponent,
+      AddCategoryComponent,
+      EditCategoryComponent,
+      CategoriesListViewComponent,
+
+      QuestionsComponent,
+      PaymentWindowComponent,
+
       RegisterComponent,
       LoginComponent,
+
       FavoritesComponent,
-      ShoppingCartComponent,
       FavoriteListComponent,
       FavoriteItemComponent,
+
+      ShoppingCartComponent,
       ShoppingCartListComponent,
       ShoppingCartItemComponent,
-      PaymentWindowComponent,
+
       AdminAreaComponent,
       UserAreaComponent,
+
       DashboardComponent,
       UserManagerComponent,
    ],

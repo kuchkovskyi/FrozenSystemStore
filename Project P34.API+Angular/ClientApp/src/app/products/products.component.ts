@@ -9,12 +9,16 @@ import { CategoryModel } from '../Models/category.model';
 })
 export class ProductsComponent implements OnInit {
 
-  listOfProducts: ProductModel[] = [];
-  listOfCategories: CategoryModel[] = [];
+  listOfProducts: ProductModel[] = null;
+  listOfCategories: CategoryModel[] = null;
 
-  constructor() { }
+  constructor() {
+    console.log(this.listOfProducts);
+   }
 
   ngOnInit(): void {
+    console.log(this.listOfProducts);
+
   }
 
 }

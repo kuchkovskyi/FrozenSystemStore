@@ -1,0 +1,30 @@
+.table {
+  color: #29586c !important;
+}
+
+thead {
+  background-color: #29586c !important;
+  color: #b3e1ee;
+  font-weight: 400 !important;
+  text-align: center !important;
+}
+
+.head-frst {
+  border-radius: 10px 0px 0px 0px !important;
+}
+
+.head-last {
+  border-radius: 0px 10px 0px 0px !important;
+}
+
+tbody {
+  background-color: ghostwhite;
+  color: #254958;
+}
+
+.fa {
+  margin: 7px;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  float: right !important;
+}
