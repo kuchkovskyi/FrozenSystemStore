@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable,  EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { RegisterModel } from '../Models/register.model';
 import { Observable } from 'rxjs';
@@ -10,9 +10,12 @@ import { SignInModel } from '../Models/login.model';
 })
 export class ApiService {
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    ) { }
 
   baseUrl = '/api/Account';
+  loginStatus = new EventEmitter<boolean>();
 
   SignUp(UserRegisterDTO: RegisterModel): Observable<ApiResult> {
     return this.http.post<ApiResult>(this.baseUrl + '/register', UserRegisterDTO);
@@ -45,6 +48,16 @@ export class ApiService {
     const token = localStorage.getItem('token');
     if (token !== null) {
       return true;
+    } else {
+      return false;
+    }
+  }
+
+  isLogOut() {
+    const token = localStorage.getItem('token');
+    if (token !== null) {
+      localStorage.removeItem('token');
+      this.loginStatus.emit(false);
     } else {
       return false;
     }

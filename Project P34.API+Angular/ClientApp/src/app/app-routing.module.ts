@@ -28,13 +28,7 @@ import { LoginComponent } from './login/login.component';
 import { AdminAreaComponent } from './Areas/admin-area/admin-area.component';
 import { DashboardComponent } from './Areas/admin-area/Components/dashboard/dashboard.component';
 
-
-
 const routes: Routes = [
-  // { path: '',
-  //   redirectTo: 'main-page',
-  //   pathMatch: 'full'
-  // },
   {
     path: 'main-page',
     component: ProductsComponent,

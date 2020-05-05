@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../core/api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  isLoggedIn: boolean;
+  isAdmin: boolean;
 
-  ngOnInit(): void {
+  constructor(
+    private apiService: ApiService,
+    private router: Router
+  ) {
+    this.isLoggedIn = this.apiService.isLoggedIn();
+    this.isAdmin = this.apiService.isAdmin();
+
+    this.apiService.loginStatus.subscribe((status) => {
+      this.isLoggedIn = status;
+      this.isAdmin = this.apiService.isAdmin();
+    });
+  }
+
+  LogOut() {
+    this.apiService.isLogOut();
+    this.router.navigate(['/login']);
   }
 
 }

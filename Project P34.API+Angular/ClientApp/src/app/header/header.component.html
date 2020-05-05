@@ -30,12 +30,23 @@
           <i class="fa fa-shopping-cart" aria-hidden="true" title="Cart"></i>
         </a>
 
-        <a [routerLink]="['/register']" class="nav-link fr">
+      <!--User Logges in-->
+        <a *ngIf="isLoggedIn === false" [routerLink]="['/register']" class="nav-link fr">
           <i class="fa fa-male" aria-hidden="true" title="Registration"></i>
         </a>
 
-        <a [routerLink]="['/login']" class="nav-link fr">
+        <a *ngIf="isLoggedIn === false" [routerLink]="['/login']" class="nav-link fr">
           <i class="fa fa-sign-in" aria-hidden="true" title="Login"></i>
+        </a>
+
+      <!--Admin Logged in-->
+        <a *ngIf="isAdmin === true" class="nav-link fr" [routerLink]="['admin-panel']" routerLinkActive="router-link-active" >
+          <i class="fa fa-user-secret" aria-hidden="true" title="Admin panel"></i>
+        </a>
+
+      <!--Logged out-->
+        <a *ngIf="isLoggedIn === true" class="nav-link fr" (click)="LogOut()">
+          <i class="fa fa-sign-out" aria-hidden="true" title="Logout"></i>
         </a>
 
       </div>

@@ -22,6 +22,7 @@
 
 .fr {
   float: left;
+  cursor: pointer;
 }
 
 .ab {

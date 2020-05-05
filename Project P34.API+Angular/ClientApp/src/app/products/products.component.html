@@ -1,13 +1,18 @@
-<div class="row-md-8">
-  <div class="col-md-12">
-    <app-categories></app-categories>
+<div *ngIf="listOfProducts !== null && listOfCategories !== null">
+  <div class="row-md-8">
+    <div class="col-md-12">
+      <app-categories></app-categories>
+    </div>
+  </div>
+
+  <div class=row-md-8>
+    <div class="col-md-8">
+      <app-product-list></app-product-list>
+    </div>
+    <router-outlet></router-outlet>
   </div>
 </div>
 
-<div class=row-md-8>
-  <div class="col-md-8">
-    <app-product-list></app-product-list>
-  </div>
-  <router-outlet></router-outlet>
+<div *ngIf="listOfProducts === null && listOfCategories === null">
+  List of Product is empty ;(
 </div>
-

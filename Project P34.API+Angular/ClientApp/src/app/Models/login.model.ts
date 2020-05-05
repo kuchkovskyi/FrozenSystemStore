@@ -1,10 +1,9 @@
-export class SignInModel
- {
-   public Email: string;
-   public Password: string;
+export class SignInModel {
+  public Email: string;
+  public Password: string;
 
-   constructor () {
-     this.Email = null;
-     this.Password = null;
-   }
- }
+  constructor () {
+   this.Email = null;
+    this.Password = null;
+  }
+}
