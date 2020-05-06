@@ -10,11 +10,7 @@ thead {
 }
 
 .head-frst {
-  border-radius: 10px 0px 0px 0px !important;
-}
-
-.head-last {
-  border-radius: 0px 10px 0px 0px !important;
+  border-radius: 10px 10px 0px 0px !important;
 }
 
 tbody {

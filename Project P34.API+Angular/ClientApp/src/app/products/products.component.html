@@ -1,16 +1,55 @@
+<div class="row-md-8">
+  <div class="col-md-12">
+    <app-categories *ngIf="listOfCategories !== null"></app-categories>
+  </div>
+</div>
 
-  <div class="row-md-8">
-    <div class="col-md-12">
-      <app-categories *ngIf="listOfCategories !== null"></app-categories>
+<div class="container" *ngIf="listOfProducts !== null">
+
+  <div class="product-wrap">
+
+    <div class="product-image">
+
+      <a href=""><img src=""></a>
+
+      <div class="shadow"></div>
+
+      <div class="actions">
+
+        <div class="actions-btn">
+          <div class="add-to-cart">
+            <a class="add-to-cart-button" href="#" title="Add to Cart"></a>
+          </div>
+
+          <div class="add-to-links">
+            <div class="add-to-wishlist">
+              <a class="add-to-wishlist-button" href="#" title="Add to Wish"></a>
+            </div>
+
+            <div class="quikview">
+              <a class="quikview-button" href="#" title="Quick view"></a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="product-list">
+      <h3>
+        <!--NAME AND BRAND-->
+      </h3>
+      <div class="price">
+        <!--PRICE--> $</div>
     </div>
   </div>
 
-  <div class=row-md-8>
-    <div class="col-md-8">
-      <app-product-list *ngIf="listOfProducts !== null"></app-product-list>
-    </div>
-    <router-outlet></router-outlet>
-  </div>
+  <router-outlet></router-outlet>
+
+</div>
 
 <div *ngIf="listOfProducts === null && listOfCategories === null" class="block">
   <i class="fa fa-square fa-5x fa-spin"></i>

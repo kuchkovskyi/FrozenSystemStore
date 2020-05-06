@@ -1,3 +1,30 @@
-<p>
-  user-manager works!
-</p>
+<div class="container">
+  <table class="table table-borderless">
+
+    <thead>
+      <tr>
+        <th class="head-frst">Name</th>
+        <th>Age</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th class="head-last">Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr class="body-tr" *ngFor="let data of listOfData">
+        <td>{{ data.fullName }}</td>
+        <td>{{ data.age }}</td>
+        <td>{{ data.phone }}</td>
+        <td>{{ data.email }}</td>
+        <td>{{ data.address }}</td>
+        <td>
+          <i (click)="deleteUser()" class="fa fa-trash-o" aria-hidden="true" title="Delete User"></i>
+          <i class="fa fa-pencil" aria-hidden="true" title="Delete User"></i>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>

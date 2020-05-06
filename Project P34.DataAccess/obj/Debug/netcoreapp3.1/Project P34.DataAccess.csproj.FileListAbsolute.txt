@@ -18,3 +18,13 @@ C:\Users\admin\Desktop\Base-App-Angular-with-JWT-Auth-and_CRUD-master\Project P3
 C:\Users\admin\Desktop\Base-App-Angular-with-JWT-Auth-and_CRUD-master\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.AssemblyInfo.cs
 C:\Users\admin\Desktop\Base-App-Angular-with-JWT-Auth-and_CRUD-master\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.dll
 C:\Users\admin\Desktop\Base-App-Angular-with-JWT-Auth-and_CRUD-master\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.pdb
+C:\Users\admin\Desktop\WEB\Angular\Laboratories\FrozenSystemOfficialStore\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.deps.json
+C:\Users\admin\Desktop\WEB\Angular\Laboratories\FrozenSystemOfficialStore\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.runtimeconfig.json
+C:\Users\admin\Desktop\WEB\Angular\Laboratories\FrozenSystemOfficialStore\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.runtimeconfig.dev.json
+C:\Users\admin\Desktop\WEB\Angular\Laboratories\FrozenSystemOfficialStore\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.dll
+C:\Users\admin\Desktop\WEB\Angular\Laboratories\FrozenSystemOfficialStore\Project P34.DataAccess\bin\Debug\netcoreapp3.1\Project P34.DataAccess.pdb
+C:\Users\admin\Desktop\WEB\Angular\Laboratories\FrozenSystemOfficialStore\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\WEB\Angular\Laboratories\FrozenSystemOfficialStore\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\WEB\Angular\Laboratories\FrozenSystemOfficialStore\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.AssemblyInfo.cs
+C:\Users\admin\Desktop\WEB\Angular\Laboratories\FrozenSystemOfficialStore\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.dll
+C:\Users\admin\Desktop\WEB\Angular\Laboratories\FrozenSystemOfficialStore\Project P34.DataAccess\obj\Debug\netcoreapp3.1\Project P34.DataAccess.pdb

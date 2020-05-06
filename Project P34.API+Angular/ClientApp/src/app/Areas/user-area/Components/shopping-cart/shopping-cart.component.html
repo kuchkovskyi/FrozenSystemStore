@@ -1,11 +1,34 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md-10">
 
-      <h1 class="title">Cart</h1>
+  <h1 class="title">Cart</h1>
 
-      <app-shopping-cart-list></app-shopping-cart-list>
+  <div class="product-block">
 
+    <div class="shadow">
+      <img class="image-of-product" src="">
     </div>
+
+    <p class="name-of-product">
+      <!--NAME-->
+    </p>
+    <p class="price-of-product">
+      <!--PRICE--> $</p>
+
+    <ul class="nav">
+
+      <li class="nav-item first-item">
+        <i class="fa fa-eye" aria-hidden="true" title="Quick view"></i>
+      </li>
+
+      <li class="nav-item">
+        <i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i>
+      </li>
+
+      <li class="nav-item last-item" [routerLink]="['/payment']">
+        <i class="fa fa-credit-card" aria-hidden="true" title="Buy"></i>
+      </li>
+
+    </ul>
+
   </div>
 </div>
