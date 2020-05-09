@@ -13,6 +13,10 @@ namespace Project_P34.DataAccess
 
         public DbSet<UserMoreInfo> userMoreInfos { get; set; }
 
+        public DbSet<Product> products { get; set; }
+
+        public DbSet<Category> categories { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<User>()

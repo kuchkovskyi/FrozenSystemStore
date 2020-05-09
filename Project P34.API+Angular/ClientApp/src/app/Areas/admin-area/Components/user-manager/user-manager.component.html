@@ -1,4 +1,8 @@
 <div class="container">
+
+  <input name="search" [(ngModel)]="searchText" (ngModelChange)="SearchUser()" class="form-control ab" type="text"
+    placeholder="Enter email or phone number of user:">
+
   <table class="table table-borderless">
 
     <thead>
@@ -13,15 +17,15 @@
     </thead>
 
     <tbody>
-      <tr class="body-tr" *ngFor="let data of listOfData">
+      <tr class="body-tr" *ngFor="let data of searchResult">
         <td>{{ data.fullName }}</td>
         <td>{{ data.age }}</td>
         <td>{{ data.phone }}</td>
         <td>{{ data.email }}</td>
         <td>{{ data.address }}</td>
         <td>
-          <i (click)="deleteUser()" class="fa fa-trash-o" aria-hidden="true" title="Delete User"></i>
-          <i class="fa fa-pencil" aria-hidden="true" title="Delete User"></i>
+          <i (click)="deleteUser(data.id)" class="fa fa-trash-o" aria-hidden="true" title="Delete User"></i>
+          <i [routerLink]="['/admin-panel/edit-user/',data.id]" class="fa fa-pencil" aria-hidden="true" title="Delete User"></i>
         </td>
       </tr>
     </tbody>

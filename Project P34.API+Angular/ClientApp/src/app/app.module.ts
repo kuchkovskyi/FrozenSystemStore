@@ -38,6 +38,7 @@ import { UserAreaComponent } from './Areas/user-area/user-area.component';
 
 import { DashboardComponent } from './Areas/admin-area/Components/dashboard/dashboard.component';
 import { UserManagerComponent } from './Areas/admin-area/Components/user-manager/user-manager.component';
+import { UserEditComponent } from './Areas/admin-area/Components/user-manager/user-edit/user-edit.component';
 
 const notifierOptions: NotifierOptions  = {
  position : { horizontal : {position: 'right'}, vertical: {position: 'top'}}
@@ -76,6 +77,7 @@ const notifierOptions: NotifierOptions  = {
 
       DashboardComponent,
       UserManagerComponent,
+      UserEditComponent,
    ],
    imports: [
     BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),

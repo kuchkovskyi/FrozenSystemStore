@@ -1,0 +1,27 @@
+<div class="container">
+
+  <h3><span  class="title">Change an User</span></h3>
+
+  <div *ngIf="model">
+
+    <div class="form-group">
+      <label>Full name:</label>
+      <input name="fullName" [(ngModel)]="model.fullName" type="text" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>Phone:</label>
+      <input name="phone" [(ngModel)]="model.phone" type="text" class="form-control" id="pwd">
+    </div>
+
+    <div class="form-group">
+      <label>Email:</label>
+      <input name="email" [(ngModel)]="model.email" type="text" class="form-control" id="pwd">
+    </div>
+
+    <button class="btn" (click)="submitForm()">Save changes</button>
+    <button class="btn btn-second" [routerLink]="['/admin-panel/user-manager']">Cancel changes</button>
+
+  </div>
+
+</div>

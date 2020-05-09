@@ -30,3 +30,14 @@ thead {
   margin-left: 7px;
   margin-right: 7px;
 }
+
+.form-control {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px !important;
+}
+
+.form-control:focus {
+  box-shadow: #2a4158 0px 0px 20px;
+  border: 1px #2a4158 solid;
+}

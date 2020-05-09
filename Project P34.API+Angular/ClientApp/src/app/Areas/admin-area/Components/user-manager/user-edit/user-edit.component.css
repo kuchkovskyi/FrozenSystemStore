@@ -1,25 +1,33 @@
-.col-md-8 {
-  margin-left: auto;
-  margin-right: auto;
+h3 {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .title {
-  background-color: #b3e1ee;
+  background-color: #b8e9f6;
   color: #29586c;
-  border-radius: 10px;
   text-align: center;
-  padding: 5px;
-  margin-top: 10px;
-  font-weight: 500;
-  text-decoration: underline;
+  padding: 7px;
+  border-radius: 10px;
 }
 
-.data-of-product {
-  background-color: #b3e1ee;
+label {
+  background-color: #b8e9f6;
   color: #29586c;
-  border-radius: 10px;
+  text-align: center;
   padding: 7px;
+  border-radius: 10px;
   font-weight: 600;
+}
+
+.form-control:focus {
+  box-shadow: #2a4158 0px 0px 20px;
+  border: 1px solid #2a4158;
+}
+
+.form-control:active {
+  box-shadow: #2a4158 0px 0px 20px;
+  border: 1px solid #2a4158;
 }
 
 .btn {
@@ -30,6 +38,10 @@
   font-weight: 600;
   border: 1px solid #29586c;
   border-radius: 7px;
+}
+
+.btn-second {
+  margin-left: 10px;
 }
 
 .btn:focus {
@@ -46,19 +58,4 @@
 .btn:active {
   box-shadow: #2a4158 0px 0px 20px;
   border-radius: 10px;
-}
-
-.form-control{
-  color: black;
-  border-radius: 7px;
-  font-size: 16px;
-}
-
-.form-control:focus {
-  box-shadow: #b3e1ee 0px 0px 20px;
-  border: solid 1px #2a4158;
-}
-
-.bdd {
-  margin-bottom: 2%;
 }

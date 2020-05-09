@@ -12,8 +12,6 @@ namespace Project_P34.DTO.Models
         public string fullName { get; set; }
 
         [Required(ErrorMessage = "Email is required!")]
-        //[EmailAddress(ErrorMessage = "Email is not correct!")]
-        //[CustomEmail(ErrorMessage = "This mail is already registered!")]
         public string email { get; set; }
 
         [Required(ErrorMessage = "Password is required!")]

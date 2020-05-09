@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { UserItem } from './../Models/user-item.model';
+import { ApiResult } from './../../../Models/result.model';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +20,14 @@ export class UserManagerService {
 
   removeUser(id: string) {
     return this.http.post(this.baseUrl + '/RemoveUser/' + id, id);
+  }
+
+  getUser(id: string) {
+    return this.http.get(this.baseUrl + '/' + id);
+  }
+
+  editUser(id: string, model: UserItem): Observable<ApiResult> {
+    return this.http.post<ApiResult>(this.baseUrl + '/editUser/' + id, model);
   }
 
 }

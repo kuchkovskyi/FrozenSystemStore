@@ -29,6 +29,7 @@ import { LoginComponent } from './login/login.component';
 
 import { AdminAreaComponent } from './Areas/admin-area/admin-area.component';
 import { DashboardComponent } from './Areas/admin-area/Components/dashboard/dashboard.component';
+import { UserEditComponent } from './Areas/admin-area/Components/user-manager/user-edit/user-edit.component';
 
 const routes: Routes = [
   {
@@ -70,7 +71,11 @@ const routes: Routes = [
         component: UserManagerComponent,
         pathMatch: 'full'
       },
-
+      {
+        path: 'edit-user/:id',
+        component: UserEditComponent,
+        pathMatch: 'full'
+      },
       {
         path: 'add-product',
         component: AddProductComponent,
