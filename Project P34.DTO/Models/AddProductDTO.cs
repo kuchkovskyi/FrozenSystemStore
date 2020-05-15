@@ -12,13 +12,13 @@ namespace Project_P34.DTO.Models
         public string Name { get; set; }
         
         [Required(ErrorMessage = "Price is required!")]
-        public string Price { get; set; }
+        public int Price { get; set; }
 
         [Required(ErrorMessage = "Brand is required!")]
         public string Brand { get; set; }
 
         [Required(ErrorMessage = "Category is required!")]
-        public Category CategoryId { get; set;  }
+        public string Category { get; set;  }
 
         [Required(ErrorMessage = "Description number is required!")]
         public string Description { get; set; }
@@ -27,10 +27,10 @@ namespace Project_P34.DTO.Models
         public string MainImage { get; set; }
 
         [Required(ErrorMessage = "Waranty is required!")]
-        public int Warranty { get; set; }
+        public string Warranty { get; set; }
 
         [Required(ErrorMessage = "Payment is required!")]
-        public int Payment { get; set; }
+        public string Payment { get; set; }
 
         [Required(ErrorMessage = "First additional image is required!")]
         public string FirstAdditionalImage { get; set; }

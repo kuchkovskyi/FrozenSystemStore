@@ -1,52 +1,54 @@
-<div class="col-md-8">
-  <h2 class="title">Add Product</h2>
+<form (ngSubmit)="OnSubmit()">
+  <div class="col-md-8">
+    <h2 class="title">Add Product</h2>
 
-  <div class="form-group">
-    <label for="name" class="data-of-product">Product's name: </label>
-    <input type="text" class="form-control" placeholder="Enter name of product:">
+    <div class="form-group">
+      <label for="name" class="data-of-product">Product's name: </label>
+      <input [(ngModel)]="model.Name" name="productName" type="text" class="form-control" placeholder="Enter name of product:">
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="data-of-product">Product's price: </label>
+      <input [(ngModel)]="model.Price" name="productPrice" type="number" class="form-control" placeholder="Enter price of product: ($)">
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="data-of-product">Product's brand: </label>
+      <input [(ngModel)]="model.Brand" name="productBrand" type="text" class="form-control" placeholder="Enter brand of product:">
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="data-of-product">Product's category: </label>
+      <input [(ngModel)]="model.Category" name="productCategory" type="text" class="form-control" placeholder="Enter category of product:">
+    </div>
+
+    <div class="form-group">
+      <label for="description" class="data-of-product">Product's description: </label>
+      <input [(ngModel)]="model.Description" name="productDescription" type="text" class="form-control" placeholder="Enter description of product:">
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="data-of-product">Product's main image: </label>
+      <input [(ngModel)]="model.MainImage" name="productMainImage" type="url" class="form-control" placeholder="Enter url of main product's image:">
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="data-of-product">Product's warranty: </label>
+      <input [(ngModel)]="model.Warranty" name="productWarranty" type="url" class="form-control" placeholder="Enter warranty of product (in months):">
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="data-of-product">Payment methods: </label>
+      <input [(ngModel)]="model.Payment" name="productPayment" type="url" class="form-control" placeholder="Enter all possible payment methods:">
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="data-of-product">Product's additional images: </label>
+      <input [(ngModel)]="model.FirstAdditionalImage" name="productFirstAdditionalImage" type="url" class="form-control bdd" placeholder="Enter url of first additional image of product  (NECESSARY!):">
+      <input [(ngModel)]="model.SecondAdditionalImage" name="productSecondAdditionalImage" type="url" class="form-control bdd" placeholder="Enter url of second additional image of product (NECESSARY!):">
+      <input [(ngModel)]="model.ThirdAdditionalImage" name="productThirdAdditionalImage" type="url" class="form-control bdd" placeholder="Enter url of third additional image of product (NECESSARY!):">
+    </div>
+
+    <button class="btn" title="Add new product">Add new product</button>
   </div>
-
-  <div class="form-group">
-    <label for="name" class="data-of-product">Product's price: </label>
-    <input type="text" class="form-control" placeholder="Enter price of product: ($)">
-  </div>
-
-  <div class="form-group">
-    <label for="name" class="data-of-product">Product's brand: </label>
-    <input type="text" class="form-control" placeholder="Enter brand of product:">
-  </div>
-
-  <div class="form-group">
-    <label for="name" class="data-of-product">Product's category: </label>
-    <input type="text" class="form-control" placeholder="Enter category of product:">
-  </div>
-
-  <div class="form-group">
-    <label for="description" class="data-of-product">Product's description: </label>
-    <input type="text" class="form-control" placeholder="Enter description of product:">
-  </div>
-
-  <div class="form-group">
-    <label for="name" class="data-of-product">Product's main image: </label>
-    <input type="url" class="form-control" placeholder="Enter url of main product's image:">
-  </div>
-
-  <div class="form-group">
-    <label for="name" class="data-of-product">Product's warranty: </label>
-    <input type="url" class="form-control" placeholder="Enter warranty of product (in months):">
-  </div>
-
-  <div class="form-group">
-    <label for="name" class="data-of-product">Payment methods: </label>
-    <input type="url" class="form-control" placeholder="Enter all possible payment methods:">
-  </div>
-
-  <div class="form-group">
-    <label for="name" class="data-of-product">Product's additional images: </label>
-    <input type="url" class="form-control bdd" placeholder="Enter url of additional product's image (NECESSARY!):">
-    <input type="url" class="form-control bdd" placeholder="Enter url of additional product's image (NECESSARY!):">
-    <input type="url" class="form-control bdd" placeholder="Enter url of additional product's image (NECESSARY!):">
-  </div>
-
-  <button class="btn" title="Add new product" [routerLink]="['/events']">Add new product</button>
-</div>
+</form>

@@ -1,6 +1,9 @@
 <div class="col md-12">
   <div class="table-responsive">
 
+    <input name="search" [(ngModel)]="searchProduct" (ngModelChange)="SearchProduct()" class="form-control ab" type="text"
+    placeholder="Enter name of product:">
+
     <table class="table table-borderless">
       <thead>
         <tr>
@@ -20,22 +23,22 @@
       </thead>
 
       <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+        <tr *ngFor="let data of searchResult">
+          <td> {{ data.name }} </td>
+          <td> {{ data.brand }} </td>
+          <td> {{ data.price }} </td>
+          <td> {{ data.category }} </td>
+          <td> {{ data.description }} </td>
+          <td> {{ data.mainImage}} </td>
+          <td> {{ data.warranty }} </td>
+          <td> {{ data.payment }} </td>
+          <td> {{ data.firstAdditionalImage }} </td>
+          <td> {{ data.secondAdditionalImage }} </td>
+          <td> {{ data.thirdAdditionalImage }} </td>
           <td>
             <i class="fa fa-eye" aria-hidden="true" title="View this"></i>
-            <i class="fa fa-pencil" aria-hidden="false" title="Edit"></i>
-            <i class="fa fa-trash-o" aria-hidden="true" title="Delete"></i>
+            <i [routerLink]="['/admin-panel/edit-product/',data.id]" class="fa fa-pencil" aria-hidden="false" title="Edit"></i>
+            <i (click)="deleteProduct(data.id)" class="fa fa-trash-o" aria-hidden="true" title="Delete"></i>
           </td>
         </tr>
       </tbody>

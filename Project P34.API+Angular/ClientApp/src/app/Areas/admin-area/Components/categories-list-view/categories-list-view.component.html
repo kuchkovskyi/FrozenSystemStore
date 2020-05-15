@@ -1,20 +1,26 @@
 <div class="container">
   <div class="col">
+
+    <input name="search" [(ngModel)]="serchCategory" (ngModelChange)="SearchCategory()" class="form-control ab" type="text"
+    placeholder="Enter name of category:">
     <div class="table-responsive">
 
       <table class="table table-borderless">
         <thead>
           <tr>
             <th class="head-frst">Name</th>
+            <th class="head-last">Actions</th>
           </tr>
         </thead>
 
         <tbody>
-          <tr>
+          <tr *ngFor="let data of searchResult">
             <td>
-              Laptops
-              <i class="fa fa-trash-o" title="Delete"></i>
-              <i class="fa fa-pencil" title="Edit"></i>
+              {{ data.name }}
+            </td>
+            <td>
+              <i (click)="deleteCategory(data.id)" class="fa fa-trash-o" title="Delete"></i>
+              <i [routerLink]="['/admin-panel/edit-category/',data.id]" class="fa fa-pencil" title="Edit"></i>
             </td>
           </tr>
         </tbody>

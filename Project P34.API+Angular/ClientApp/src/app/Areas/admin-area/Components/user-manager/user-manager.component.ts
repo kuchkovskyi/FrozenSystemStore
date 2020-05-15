@@ -35,7 +35,7 @@ export class UserManagerComponent implements OnInit {
           this.spinner.hide();
         } else {
           for (let i = 0; i < data.errors; i++) {
-            this.notifier.notify('info', data.errors[i]);
+            this.notifier.notify('error', data.errors[i]);
             this.spinner.hide();
           }
         }

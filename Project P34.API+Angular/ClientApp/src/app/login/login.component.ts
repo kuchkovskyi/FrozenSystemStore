@@ -35,14 +35,14 @@ export class LoginComponent implements OnInit {
     this.spinner.show();
 
     if (this.model.Email === null) {
-      this.notifier.notify('info', 'Please, enter email!');
+      this.notifier.notify('error', 'Please, enter email!');
       this.isError = true;
     } else if (!this.validateEmail(this.model.Email)) {
-      this.notifier.notify('info', 'Email is not correct!');
+      this.notifier.notify('error', 'Email is not correct!');
       this.isError = true;
     }
     if (this.model.Password === null) {
-      this.notifier.notify('info', 'Please, enter password!');
+      this.notifier.notify('error', 'Please, enter password!');
       this.isError = true;
     }
 
@@ -68,7 +68,7 @@ export class LoginComponent implements OnInit {
             this.router.navigate(['/main-page']);
             } else {
             for (let i = 0; i < data.errors.length; i++) {
-              this.notifier.notify('info', data.errors[i]);
+              this.notifier.notify('error', data.errors[i]);
             }
             this.spinner.hide();
           }

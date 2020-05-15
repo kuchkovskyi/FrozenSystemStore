@@ -4,17 +4,16 @@
 /* Provide sufficient contrast against white background */
 
 body {
-  background-image: url(https://image.freepik.com/free-photo/_37787-2289.jpg);
+  /* background-image: url("https://s1.1zoom.ru/big0/65/Tropics_Forests_455841.jpg"); */
   background-attachment: fixed;
   background-size: 100%;
-  background-repeat: no-repeat;
   font-family: 'Montserrat', sans-serif;
   color: white;
  }
 
  ::selection {
-   background-color: #29586c;
-   color: #b3e1ee;
+   background-color: green;
+   color: white;
  }
 
  ::-webkit-scrollbar-button {
@@ -25,22 +24,22 @@ body {
  }
 
  ::-webkit-scrollbar-track{
-   background-color: #b3e1ee;
-   box-shadow: 0px 0px 2px #b3e1ee inset;
+   background-color: #00ff00;
+   box-shadow: 0px 0px 2px #00ff00 inset;
  }
 
  ::-webkit-scrollbar-thumb {
    -webkit-border-radius: 5px;
    border-radius: 5px;
-   background-color: #f2f5f7;
-   box-shadow: 0px 1px 1px #f2f5f7 inset;
+   background-color: #00cc00;
+   box-shadow: 0px 1px 1px #00cc00 inset;
  }
 
  ::-webkit-scrollbar-thumb:hover {
    -webkit-border-radius: 5px;
    border-radius: 10px;
-   background-color: #89bdd6;
-   box-shadow: 0px 1px 1px #89bdd6 inset;
+   background-color: green;
+   box-shadow: 0px 1px 1px green inset;
  }
 
  ::-webkit-resizer {

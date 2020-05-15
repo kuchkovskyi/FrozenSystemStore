@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Project_P34.API_Angular.Migrations
 {
-    public partial class first : Migration
+    public partial class Helloworld : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -44,6 +44,42 @@ namespace Project_P34.API_Angular.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "tblCategories",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_tblCategories", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "tblProduct",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: false),
+                    Price = table.Column<int>(nullable: false),
+                    Brand = table.Column<string>(nullable: false),
+                    Category = table.Column<string>(nullable: false),
+                    Description = table.Column<string>(nullable: false),
+                    MainImage = table.Column<string>(nullable: false),
+                    Warranty = table.Column<string>(nullable: false),
+                    Payment = table.Column<string>(nullable: false),
+                    FirstAdditionalImage = table.Column<string>(nullable: false),
+                    SecondAdditionalImage = table.Column<string>(nullable: false),
+                    ThirdAdditionalImage = table.Column<string>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_tblProduct", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -228,6 +264,12 @@ namespace Project_P34.API_Angular.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "tblCategories");
+
+            migrationBuilder.DropTable(
+                name: "tblProduct");
 
             migrationBuilder.DropTable(
                 name: "tblUserMoreInfo");

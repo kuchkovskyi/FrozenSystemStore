@@ -132,7 +132,7 @@ namespace Project_P34.API_Angular
                     spa.UseAngularCliServer(npmScript: "start");
                 }
             });
-          //  SeederDatabase.SeedData(app.ApplicationServices, env, Configuration);
+            //SeederDatabase.SeedData(app.ApplicationServices, env, Configuration);
 
         }
     }

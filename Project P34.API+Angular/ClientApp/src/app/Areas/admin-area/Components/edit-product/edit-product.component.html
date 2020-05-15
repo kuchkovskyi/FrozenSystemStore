@@ -1,52 +1,55 @@
 <div class="col-md-8">
-  <h2 class="title">Edit Product</h2>
+  <h2 class="title">Change of Product</h2>
 
-  <div class="form-group">
-    <label for="name" class="data-of-product">Product's name: </label>
-    <input type="text" class="form-control" placeholder="">
+  <div *ngIf="model">
+    <div class="form-group">
+      <label for="name" class="data-of-product">Product's name: </label>
+      <input name="nameOfProduct" [(ngModel)]="model.name" type="text" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="data-of-product">Product's price: </label>
+      <input name="priceOfProduct" [(ngModel)]="model.price" type="number" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="data-of-product">Product's brand: </label>
+      <input name="brandOfProduct" [(ngModel)]="model.brand" type="text" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="data-of-product">Product's category: </label>
+      <input name="categoryOfProduct" [(ngModel)]="model.category" type="text" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="description" class="data-of-product">Product's description: </label>
+      <input name="descriptionOfProduct" [(ngModel)]="model.description" type="text" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="data-of-product">Product's image: </label>
+      <input name="mainImageOfProduct" [(ngModel)]="model.mainImage" type="url" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="data-of-product">Product's warranty: </label>
+      <input name="warrantyOfProduct" [(ngModel)]="model.warranty" type="url" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="data-of-product">Payment methods: </label>
+      <input name="paymentMethods" [(ngModel)]="model.payment" type="url" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="name" class="data-of-product">Product's additional images: </label>
+      <input name="firstAdditionalImageOfProduct" [(ngModel)]="model.firstAdditionalImage" type="url" class="form-control bdd">
+      <input name="secondAdditionalImageOfProduct" [(ngModel)]="model.secondAdditionalImage" type="url" class="form-control bdd">
+      <input name="thirdAdditionalImageOfProduct" [(ngModel)]="model.thirdAdditionalImage" type="url" class="form-control bdd">
+    </div>
   </div>
 
-  <div class="form-group">
-    <label for="name" class="data-of-product">Product's price: </label>
-    <input type="text" class="form-control" placeholder="">
-  </div>
-
-  <div class="form-group">
-    <label for="name" class="data-of-product">Product's brand: </label>
-    <input type="text" class="form-control" placeholder="">
-  </div>
-
-  <div class="form-group">
-    <label for="name" class="data-of-product">Product's category: </label>
-    <input type="text" class="form-control" placeholder="">
-  </div>
-
-  <div class="form-group">
-    <label for="description" class="data-of-product">Product's description: </label>
-    <input type="text" class="form-control" placeholder="">
-  </div>
-
-  <div class="form-group">
-    <label for="name" class="data-of-product">Product's image: </label>
-    <input type="url" class="form-control" placeholder="">
-  </div>
-
-  <div class="form-group">
-    <label for="name" class="data-of-product">Product's warranty: </label>
-    <input type="url" class="form-control" placeholder="">
-  </div>
-
-  <div class="form-group">
-    <label for="name" class="data-of-product">Payment methods: </label>
-    <input type="url" class="form-control" placeholder="">
-  </div>
-
-  <div class="form-group">
-    <label for="name" class="data-of-product">Product's additional images: </label>
-    <input type="url" class="form-control bdd" placeholder="">
-    <input type="url" class="form-control bdd" placeholder="">
-    <input type="url" class="form-control bdd" placeholder="">
-  </div>
-
-  <button class="btn" title="Save changes" [routerLink]="['/events']">Save changes</button>
+  <button (click)="submitForm()" class="btn" title="Save changes">Save changes</button>
+  <button class="btn btn-second" [routerLink]="['/admin-panel/products-list-view']">Cancel changes</button>
 </div>

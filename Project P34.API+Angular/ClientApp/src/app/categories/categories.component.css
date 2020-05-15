@@ -1,9 +1,9 @@
 .menu {
   list-style-type: none;
-  background-color: #29586c;
+  background-color: #00cc00;
   padding: 7px;
   border-radius: 10px;
-  color: #b3e1ee;
+  color: #00ff00;
 }
 
 .menu-item {
@@ -12,13 +12,13 @@
 
 .category {
   text-decoration: none;
-  color: #b3e1ee;
+  color: #00ff00;
   padding: 7px;
   border-radius: 10px;
   margin: 3px;
 }
 
 .category:hover {
-  background-color: #b3e1ee;
-  color:#29586c ;
+  background-color: #00ff00;
+  color:#00cc00 ;
 }

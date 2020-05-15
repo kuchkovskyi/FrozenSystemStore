@@ -1,10 +1,10 @@
 .table {
-  color: #29586c !important;
+  color: #00cc00 !important;
 }
 
 thead {
-  background-color: #29586c !important;
-  color: #b3e1ee;
+  background-color: #00cc00 !important;
+  color: #ffffff;
   font-weight: 400 !important;
   text-align: center !important;
 }
@@ -18,10 +18,21 @@ thead {
 }
 
 tbody {
-  background-color: ghostwhite;
-  color: #254958;
+  background-color: #00ff00;
+  color: #ffffff;
 }
 
 .fa {
   margin: 3px;
+}
+
+.form-control {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px !important;
+}
+
+.form-control:focus {
+  box-shadow: #00cc00 0px 0px 20px;
+  border: 1px #00cc00 solid;
 }

@@ -1,10 +1,13 @@
 <div class="col-md-8">
-  <h2 class="title">Edit Category</h2>
+  <h2 class="title">Change of Category</h2>
 
-  <div class="form-group">
-    <label for="name" class="data-of-category">Category's name: </label>
-    <input type="text" class="form-control" placeholder="">
+  <div *ngIf="model">
+    <div class="form-group">
+      <label class="data-of-category">Category's name: </label>
+      <input name="nameOfCategory" [(ngModel)]="model.name" type="text" class="form-control">
+    </div>
   </div>
 
-  <button class="btn" title="Save changes" [routerLink]="['/events']">Save changes</button>
+  <button class="btn" (click)="submitForm()" title="Save changes">Save changes</button>
+  <button class="btn btn-second" [routerLink]="['/admin-panel/categories-list-view']">Cancel changes</button>
 </div>

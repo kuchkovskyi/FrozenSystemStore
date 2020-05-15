@@ -4,9 +4,9 @@
   margin: 20px;
   font-size: 17px;
   color: #fff;
-  background-color: #2ca8c6;
+  background-color: green;
   border: none;
-  border-bottom: 4px solid #6ee9fd;
+  border-bottom: 4px solid #66ff33;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -17,18 +17,18 @@
 
 .odmen-block:hover {
   transition: all 0.5px;
-  background-color: #b3e1ee;
-  color: #2c536c;
-  border-bottom: 4px solid #2ca8c6;
+  background-color: #00ff00;
+  color: #006600;
+  border-bottom: 4px solid green;
 }
 
 .odmen-block:active {
-  box-shadow: #2a4158 0px 0px 20px;
+  box-shadow: #006600 0px 0px 20px;
   border-radius: 10px;
 }
 
 .odmen-block:focus {
-  box-shadow: #2a4158 0px 0px 20px;
+  box-shadow: #006600 0px 0px 20px;
   border-radius: 10px;
 }
 
@@ -57,14 +57,14 @@
 }
 
 .odmen-block:hover .text::before {
-  background-color: #2c536c;
+  background-color: #006600;
   visibility: visible;
   width: 50%;
   transform: translateX(80%);
 }
 
 .odmen-block:hover .text::after {
-  background-color: #2c536c;
+  background-color: #006600;
   visibility: visible;
   width: 50%;
   transform: translateX(-80%);

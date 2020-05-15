@@ -82,7 +82,7 @@ const routes: Routes = [
         pathMatch: 'full'
       },
       {
-        path: 'edit-product',
+        path: 'edit-product/:id',
         component: EditProductComponent,
         pathMatch: 'full'
       },
@@ -98,7 +98,7 @@ const routes: Routes = [
         pathMatch: 'full'
       },
       {
-        path: 'edit-category',
+        path: 'edit-category/:id',
         component: EditCategoryComponent,
         pathMatch: 'full'
       },

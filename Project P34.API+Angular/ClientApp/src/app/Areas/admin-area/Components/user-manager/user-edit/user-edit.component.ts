@@ -39,19 +39,19 @@ export class UserEditComponent implements OnInit {
 
   submitForm() {
     if (this.model.email === null) {
-      this.notifier.notify('info', 'Please, enter user`s email!');
+      this.notifier.notify('error', 'Please, enter user`s email!');
       this.isError = true;
     }
     if (this.model.fullName === null) {
-      this.notifier.notify('info', 'Please, enter user`s full name!');
+      this.notifier.notify('error', 'Please, enter user`s full name!');
       this.isError = true;
     }
     if (this.model.phone === null) {
-      this.notifier.notify('info', 'Please, enter user`s phone number!');
+      this.notifier.notify('error', 'Please, enter user`s phone number!');
       this.isError = true;
     }
     if (!this.validateEmail) {
-      this.notifier.notify('info', 'Email is not correct!');
+      this.notifier.notify('error', 'Email is not correct!');
       this.isError = true;
     }
 
@@ -65,7 +65,7 @@ export class UserEditComponent implements OnInit {
           }
         },
         (error) => {
-          this.notifier.notify('info', 'ERROR!!!');
+          this.notifier.notify('error', 'ERROR!!!');
         }
       );
     }

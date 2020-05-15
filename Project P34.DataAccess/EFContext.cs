@@ -9,7 +9,7 @@ namespace Project_P34.DataAccess
 {
     public class EFContext : IdentityDbContext<User>
     {
-        public EFContext(DbContextOptions<EFContext> options): base(options) { }
+        public EFContext(DbContextOptions<EFContext> options) : base(options) { }
 
         public DbSet<UserMoreInfo> userMoreInfos { get; set; }
 

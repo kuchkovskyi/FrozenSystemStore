@@ -31,27 +31,27 @@ export class RegisterComponent implements OnInit {
     this.spinner.show();
 
     if (this.confirmPassword !== this.model.password) {
-      this.notifier.notify('info', 'Confirm password is not correct!');
+      this.notifier.notify('error', 'Confirm password is not correct!');
       this.isError = true;
     }
     if (!this.validateEmail(this.model.email)) {
-      this.notifier.notify('info', 'Email is not correct format!');
+      this.notifier.notify('error', 'Email is not correct format!');
       this.isError = true;
     }
     if (this.model.age === 0) {
-      this.notifier.notify('info', 'Please, enter age!');
+      this.notifier.notify('error', 'Please, enter age!');
       this.isError = true;
     }
     if (this.model.address === null) {
-      this.notifier.notify('info', 'Please, enter address!');
+      this.notifier.notify('error', 'Please, enter address!');
       this.isError = true;
     }
     if (this.model.fullName === null) {
-      this.notifier.notify('info', 'Please, enter full name!');
+      this.notifier.notify('error', 'Please, enter full name!');
       this.isError = true;
     }
     if (this.model.phoneNumber === null) {
-      this.notifier.notify('info', 'Please, enter phone number!');
+      this.notifier.notify('error', 'Please, enter phone number!');
       this.isError = true;
     }
 

@@ -10,13 +10,10 @@ namespace Project_P34.DataAccess.Entity
     public class Category
     {
         [Key]
-        [ForeignKey("Product")]
-        public string Id { get;set; } 
+        public int Id { get; set; }
 
         [Required]
         public string Name { get; set; }
-
-        public virtual Product Product { get; set; }
 
     }
 }

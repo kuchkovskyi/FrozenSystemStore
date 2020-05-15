@@ -5,7 +5,7 @@ export class ProductModel {
   public Category: string;
   public Description: string;
   public MainImage: string;
-  public Warranty: number;
+  public Warranty: string;
   public Payment: string;
   public FirstAdditionalImage: string;
   public SecondAdditionalImage: string;
