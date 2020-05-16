@@ -1,14 +1,13 @@
 .error {
   text-align: center;
   margin-top: 225px;
-  color: green;
+  color: white;
   font-weight: 200;
 }
 
 .text {
   text-align: center;
-  color: green;
-  font-weight: 700;
+  color: white;
   font-size: 16px;
   margin-bottom: 225px;
 }

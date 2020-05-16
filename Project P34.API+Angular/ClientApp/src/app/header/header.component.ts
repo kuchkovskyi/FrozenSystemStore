@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
 
   isLoggedIn: boolean;
   isAdmin: boolean;
+  searchProduct: string;
 
   constructor(
     private apiService: ApiService,
@@ -33,5 +34,7 @@ export class HeaderComponent implements OnInit {
     this.apiService.isLogOut();
     this.router.navigate(['/login']);
   }
+
+  SearchProduct() { }
 
 }

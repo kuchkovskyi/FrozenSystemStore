@@ -1,18 +1,20 @@
 <div class="container">
 
-  <div class="row">
+  <div class="row" *ngIf="model">
 
     <div class="col-md-4">
-      <img
-        src=""
-        class="img-fluid">
+      <img src="{{ model.mainImage }}" class="rounded">
     </div>
 
-    <div class="col-md-6">
-      <p class="p-params">Name: <!--ИИМЯ--><span class="data"></span></p>
-      <p class="p-params">Brand: <!--БРЕНД--><span class="data"></span></p>
-      <p class="p-params">Category: <!--КАТЕГОРИЯ--><span class="data"></span></p>
-      <p class="p-params">Description: <!--ОПИСАНИЕ--><span class="data"></span></p>
+    <div class="col-md-5">
+      <p class="p-params">Name:
+        <span class="data">{{ model.name }}</span></p>
+      <p class="p-params">Brand:
+        <span class="data">{{ model.brand }}</span></p>
+      <p class="p-params">Category:
+        <span class="data">{{ model.category }}</span></p>
+      <p class="p-params">Description:
+        <span class="data">{{ model.description }}</span></p>
 
       <table class="table table-borderless">
         <thead>
@@ -23,8 +25,9 @@
 
         <tbody>
           <tr>
-            <td><!--МЕСЯЦЫ--><br><br>
-              The seller guarantees the packaging of the ordered goods, which ensures the integrity and safety of its
+            <td>
+              {{ model.warranty }}<br><br>
+              The seller guarantees the packaging of the ordered goods, which ensures the integrity and safety of it's
               presentation.</td>
           </tr>
         </tbody>
@@ -42,7 +45,7 @@
         <tbody>
           <tr>
             <td>
-             <!--СПОСОБЫ ОПЛАТЫ-->
+              {{ model.payment }}
             </td>
           </tr>
         </tbody>
@@ -50,9 +53,10 @@
 
     </div>
 
-    <div class="col-md-2">
+    <div class="col-md-3">
       <ul>
-        <li><button class="btn">Buy: <!--ЦЕНА--> $</button></li>
+        <li><button class="btn" [routerLink]="['/payment']">Buy:
+            {{ model.price }} $</button></li>
         <li><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></li>
         <li><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></li>
       </ul>
@@ -72,21 +76,15 @@
 
       <ul class="img-menu">
         <li>
-          <img
-            src=""
-            class="imgs">
+          <img src="{{ model.firstAdditionalImage }}" class="imgs">
         </li>
         <hr>
         <li>
-          <img
-            src=""
-            class="imgs">
+          <img src="{{ model.secondAdditionalImage }}" class="imgs">
         </li>
         <hr>
         <li>
-          <img
-            src=""
-            class="imgs">
+          <img src="{{ model.thirdAdditionalImage }}" class="imgs">
         </li>
 
       </ul>

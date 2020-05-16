@@ -1,64 +1,57 @@
-.col-md-4, .col-md-6, .col-md-2  { margin-top: 1%; }
-
-.img-fluid {
-  border-radius: 10px;
-  width: 400px;
-  height: 200px;
-  border: 1px solid white;
-}
+.col-md-4, .col-md-5, .col-md-3  { margin-top: 1%; }
 
 .p-params {
-  color: #29586c;
-  font-weight: 600;
+  color: white;
 }
 
 .data {
-  background-color: #29586c;
-  color: #b3e1ee;
+  color: white;
   padding: 5px;
   border-radius: 10px;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .table-borderless {
-  background-color: #b3e1ee;
-  color: #29586c;
+  background-color: #006600;
+  color: white;
   border-radius: 10px;
-  border: #29586c 1px solid;
+  border: #006600 1px solid;
   border-collapse: separate;
 }
 
-tr, th, td { border-top: 1px solid #29586c; }
+tr, th, td { border-top: 1px solid white; }
 
 ul { list-style-type: none; }
 
 .btn {
-  background-color: #b3e1ee;
-  color: #29586c;
-  border: 1px solid #29586c;
+  background-color: green;
+  color: #fff;
+  border: 1px solid green;
   border-radius: 10px;
 }
 
 .btn:hover {
-  background-color: #94c0c2;
-  border: 1px #2a4158 solid;
+  background-color: #006600;
+  border: 1px #fff solid;
   text-decoration: underline;
-  color: #2a4158;
+  color: #fff;
 }
 
-.btn:focus { box-shadow: #2a4158 0px 0px 20px; }
+.btn:focus { box-shadow: #00ff00 0px 0px 20px; }
 
 .fa {
-  color: #29586c;
+  color: #fff;
   margin-top: 10px;
   text-align: center;
   padding: 5px;
   border-radius: 10px;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .fa:hover {
-  color: #b3e1ee;
-  background-color: #2a4158;
+  color: #006600;
+  background-color: #fff;
 }
 
 .bb {
@@ -68,8 +61,8 @@ ul { list-style-type: none; }
 }
 
 .gallery {
-  color: #29586c;
-  background-color: #b3e1ee;
+  color: #fff;
+  background-color: #006600;
   padding: 5px;
   border-radius: 10px;
   margin-left: auto;
@@ -83,10 +76,7 @@ ul { list-style-type: none; }
 .imgs {
   width: 700px;
   height: 350px;
-  border: 1px solid white;
   border-radius: 10px;
 }
 
-img:hover { border: 1px solid #29586c; }
-
-hr { background-color: #29586c !important; width: 80% !important; }
+hr { background-color: #fff !important; width: 80% !important; }

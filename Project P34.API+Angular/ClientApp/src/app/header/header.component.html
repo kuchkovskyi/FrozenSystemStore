@@ -9,7 +9,7 @@
     </li>
 
     <li *ngIf="!isAdmin" class="nav-item srch">
-      <input class="form-control" type="text" placeholder="What are you looking for?">
+      <input name="search" [(ngModel)]="searchProduct" (ngModelChange)="SearchProduct()" class="form-control" type="text" placeholder="What are you looking for?">
     </li>
 
     <li class="nav-item">

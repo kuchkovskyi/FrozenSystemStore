@@ -36,13 +36,11 @@ const routes: Routes = [
     path: 'main-page',
     component: ProductsComponent,
     pathMatch: 'full',
-    children: [
-      {
-        path: 'view/:id',
-        component: ViewProductComponent,
-        pathMatch: 'full'
-      }
-    ]
+  },
+  {
+    path: 'view-product/:id',
+    component: ViewProductComponent,
+    pathMatch: 'full'
   },
   {
     path: 'register',

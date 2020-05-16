@@ -14,6 +14,7 @@ export class ProductsComponent implements OnInit {
 
   listOfProducts: Product[] = null;
   listOfCategories: Category[] = null;
+  model: Product;
 
   constructor(
     private categoryService: CategoryService,

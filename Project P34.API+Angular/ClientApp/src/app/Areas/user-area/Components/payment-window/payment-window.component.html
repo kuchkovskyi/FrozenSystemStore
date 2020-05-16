@@ -2,29 +2,33 @@
   <div class="row">
     <div class="col">
 
-      <p><i class="fa fa-credit-card fa-3x" aria-hidden="true"></i></p>
-      <h2 class="login">Payment</h2>
+      <form (ngSubmit)="OnSubmit()">
 
-      <div class="form-group">
-        <label class="lbl" for="usr">Number of card:</label>
-        <input type="text" class="form-control" id="usr" placeholder="Enter card's number:">
-      </div>
+        <p><i class="fa fa-credit-card fa-3x" aria-hidden="true"></i></p>
+        <h2 class="login">Payment</h2>
 
-      <div class="form-group">
-        <label class="lbl" for="pwd">CVV:</label>
-        <input type="password" class="form-control" id="pwd" placeholder="Enter card's CVV:">
-      </div>
+        <div class="form-group">
+          <label class="lbl" for="usr">Number of card:</label>
+          <input [(ngModel)]="model.NumberOfCard" name="numberCard" type="text" class="form-control" id="usr" placeholder="Enter card's number:">
+        </div>
 
-      <div class="form-group">
-        <ul>
-          <li class="menu-item"><input type="text" class="form-control validity" maxlength="2" id="pwd" placeholder="MM"
-              size="12"></li>
-          <li class="menu-item"><input type="text" class="form-control validity" maxlength="2" id="pwd" placeholder="YY"
-              size="20"></li>
-        </ul>
-      </div>
+        <div class="form-group">
+          <label class="lbl" for="pwd">CVV:</label>
+          <input [(ngModel)]="model.CVV" name="cvvCard" type="number" class="form-control" id="pwd" placeholder="Enter card's CVV:">
+        </div>
 
-      <input class="bbtn btn" type="submit" name="submit" value="Pay" [routerLink]="['/main-page']">
+        <div class="form-group">
+          <ul>
+            <li class="menu-item"><input type="number" class="form-control validity" maxlength="2" id="pwd"
+                placeholder="MM" size="12" [(ngModel)]="model.Month" name="monthCa"></li>
+            <li class="menu-item"><input type="number" class="form-control validity" maxlength="2" id="pwd"
+                placeholder="YY" size="20" [(ngModel)]="model.Year" name="yearCard"></li>
+          </ul>
+        </div>
+
+        <input class="bbtn btn" type="submit" name="submit" value="Pay" [routerLink]="['/main-page']">
+
+      </form>
 
     </div>
   </div>

@@ -36,7 +36,7 @@
           <td> {{ data.secondAdditionalImage }} </td>
           <td> {{ data.thirdAdditionalImage }} </td>
           <td>
-            <i class="fa fa-eye" aria-hidden="true" title="View this"></i>
+            <i class="fa fa-eye" aria-hidden="true" title="View this" [routerLink]="['/view-product/',data.id]"></i>
             <i [routerLink]="['/admin-panel/edit-product/',data.id]" class="fa fa-pencil" aria-hidden="false" title="Edit"></i>
             <i (click)="deleteProduct(data.id)" class="fa fa-trash-o" aria-hidden="true" title="Delete"></i>
           </td>
