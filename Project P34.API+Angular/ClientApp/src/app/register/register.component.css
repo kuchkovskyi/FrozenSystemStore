@@ -52,8 +52,9 @@ a:hover {
 .bbtn:hover {
   transition: all 0.5px;
   background-color: #66ff33;
-  color: green;
+  color: #006600;
   border-bottom: 4px solid #00cc00;
+  text-decoration: underline;
 }
 
 .bbtn:focus {

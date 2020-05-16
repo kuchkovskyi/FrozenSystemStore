@@ -1,16 +1,23 @@
 <div class="row-md-8">
   <div class="col-md-12">
-    <app-categories *ngIf="listOfCategories !== null"></app-categories>
+
+    <ul class="menu" *ngIf="listOfProducts !== null">
+      <li class="menu-item">
+        <a class="category" *ngFor="let model of listOfCategories">
+          {{ model.name }}
+        </a>
+      </li>
+    </ul>
+
   </div>
 </div>
 
 <div class="container" *ngIf="listOfProducts !== null">
-
-  <div class="product-wrap">
+  <div class="product-wrap" *ngFor="let model of listOfProducts">
 
     <div class="product-image">
 
-      <a href=""><img src=""></a>
+      <a href=""><img src="{{ model.mainImage }}"></a>
 
       <div class="shadow"></div>
 
@@ -18,17 +25,17 @@
 
         <div class="actions-btn">
           <div class="add-to-cart">
-            <a class="add-to-cart-button" href="#" title="Add to Cart"></a>
+            <a class="add-to-cart-button" title="Add to Cart"></a>
           </div>
 
           <div class="add-to-links">
             <div class="add-to-wishlist">
-              <a class="add-to-wishlist-button" href="#" title="Add to Wish"></a>
+              <a class="add-to-wishlist-button" title="Add to Wish"></a>
             </div>
 
-            <div class="quikview">
-              <a class="quikview-button" href="#" title="Quick view"></a>
-            </div>
+            <!-- <div class="quikview">
+              <a class="quikview-button" title="Quick view" [routerLink] = "['/view']"></a>
+            </div> -->
 
           </div>
 
@@ -39,11 +46,12 @@
     </div>
 
     <div class="product-list">
-      <h3>
-        <!--NAME AND BRAND-->
+      <h3 class="model-brand">
+        {{ model.brand }}
+        {{ model.name }}
       </h3>
       <div class="price">
-        <!--PRICE--> $</div>
+        {{ model.price }} $</div>
     </div>
   </div>
 

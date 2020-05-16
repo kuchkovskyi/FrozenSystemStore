@@ -174,5 +174,34 @@ namespace Project_P34.API_Angular.Controllers
                 Message = "OK"
             };
         }
+
+        [HttpPost("shopingCart")]
+        public List<int> Cart([FromRoute] string UserId)
+        {
+            List<int> cart = new List<int>();
+
+            foreach(var item in _context.shoppingCarts)
+            {
+                if (item.UserId == UserId)
+                    cart.Add(item.ProductId);
+            }
+
+            return cart;
+        }
+
+        [HttpPost("favoriteList")]
+        public List<int> Wishes([FromRoute] string UserId)
+        {
+            List<int> favorites = new List<int>();
+
+            foreach (var item in _context.favoriteLists)
+            {
+                if (item.FavoriteUserId == UserId)
+                    favorites.Add(item.FavoriteProductId);
+            }
+
+            return favorites;
+        }
+
     }
 }

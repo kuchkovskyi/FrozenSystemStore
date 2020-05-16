@@ -35,13 +35,15 @@ const routes: Routes = [
   {
     path: 'main-page',
     component: ProductsComponent,
-    pathMatch: 'full'
+    pathMatch: 'full',
+    children: [
+      {
+        path: 'view/:id',
+        component: ViewProductComponent,
+        pathMatch: 'full'
+      }
+    ]
   },
-  // {
-  // path: ':id',
-  // component: ViewProductComponent,
-  // pathMatch: 'full'
-  // },
   {
     path: 'register',
     component: RegisterComponent,

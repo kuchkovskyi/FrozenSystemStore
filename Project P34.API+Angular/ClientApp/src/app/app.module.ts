@@ -19,7 +19,6 @@ import { EditProductComponent } from './Areas/admin-area/Components/edit-product
 import { ViewProductComponent } from './products/view-product/view-product.component';
 import { ProductsListViewComponent } from './Areas/admin-area/Components/products-list-view/products-list-view.component';
 
-import { CategoriesComponent } from './categories/categories.component';
 import { AddCategoryComponent } from './Areas/admin-area/Components/add-category/add-category.component';
 import { EditCategoryComponent } from './Areas/admin-area/Components/edit-category/edit-category.component';
 import { CategoriesListViewComponent } from './Areas/admin-area/Components/categories-list-view/categories-list-view.component';
@@ -58,7 +57,6 @@ const notifierOptions: NotifierOptions  = {
       ViewProductComponent,
       ProductsListViewComponent,
 
-      CategoriesComponent,
       AddCategoryComponent,
       EditCategoryComponent,
       CategoriesListViewComponent,

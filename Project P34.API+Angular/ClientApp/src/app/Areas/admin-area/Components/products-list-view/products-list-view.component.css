@@ -3,7 +3,7 @@
 }
 
 thead {
-  background-color: #00cc00 !important;
+  background-color: #006600 !important;
   color: #ffffff;
   font-weight: 400 !important;
   text-align: center !important;
@@ -17,9 +17,13 @@ thead {
   border-radius: 0px 10px 0px 0px !important;
 }
 
-tbody {
-  background-color: #00ff00;
+.tr-body {
+  background-color: #006600;
   color: #ffffff;
+}
+
+.tr-body:hover {
+  background-color: #00cc00;
 }
 
 .fa {

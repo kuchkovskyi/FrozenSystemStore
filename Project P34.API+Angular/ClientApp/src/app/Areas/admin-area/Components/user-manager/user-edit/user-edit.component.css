@@ -34,8 +34,8 @@ label {
   margin-bottom: 10px;
   background-color: green;
   color: #ffffff;
-  border: 1px solid #00ff00;
-  border-radius: 7px;
+  border: 1px solid green;
+  border-radius: 10px;
 }
 
 .btn-second {

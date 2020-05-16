@@ -4,7 +4,7 @@
 /* Provide sufficient contrast against white background */
 
 body {
-  /* background-image: url("https://s1.1zoom.ru/big0/65/Tropics_Forests_455841.jpg"); */
+  background-image: url("https://million-wallpapers.ru/wallpapers/5/10/481599648487582.jpg");
   background-attachment: fixed;
   background-size: 100%;
   font-family: 'Montserrat', sans-serif;
@@ -12,7 +12,7 @@ body {
  }
 
  ::selection {
-   background-color: green;
+   background-color: #006600;
    color: white;
  }
 
@@ -31,15 +31,15 @@ body {
  ::-webkit-scrollbar-thumb {
    -webkit-border-radius: 5px;
    border-radius: 5px;
-   background-color: #00cc00;
-   box-shadow: 0px 1px 1px #00cc00 inset;
+   background-color: green;
+   box-shadow: 0px 1px 1px green inset;
  }
 
  ::-webkit-scrollbar-thumb:hover {
    -webkit-border-radius: 5px;
    border-radius: 10px;
-   background-color: green;
-   box-shadow: 0px 1px 1px green inset;
+   background-color: #006600;
+   box-shadow: 0px 1px 1px #006600 inset;
  }
 
  ::-webkit-resizer {

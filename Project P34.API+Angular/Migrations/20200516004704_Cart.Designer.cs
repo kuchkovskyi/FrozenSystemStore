@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Project_P34.DataAccess;
 
 namespace Project_P34.API_Angular.Migrations
 {
     [DbContext(typeof(EFContext))]
-    partial class EFContextModelSnapshot : ModelSnapshot
+    [Migration("20200516004704_Cart")]
+    partial class Cart
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -164,29 +166,6 @@ namespace Project_P34.API_Angular.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("tblCategories");
-                });
-
-            modelBuilder.Entity("Project_P34.DataAccess.Entity.FavoriteList", b =>
-                {
-                    b.Property<string>("FavoriteUserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("FavoriteProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("CategoryProductOfId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CategoryUserOfId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("FavoriteUserId", "FavoriteProductId");
-
-                    b.HasIndex("CategoryProductOfId");
-
-                    b.HasIndex("CategoryUserOfId");
-
-                    b.ToTable("tblFavotity");
                 });
 
             modelBuilder.Entity("Project_P34.DataAccess.Entity.Product", b =>
@@ -394,17 +373,6 @@ namespace Project_P34.API_Angular.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Project_P34.DataAccess.Entity.FavoriteList", b =>
-                {
-                    b.HasOne("Project_P34.DataAccess.Entity.Product", "CategoryProductOf")
-                        .WithMany()
-                        .HasForeignKey("CategoryProductOfId");
-
-                    b.HasOne("Project_P34.DataAccess.Entity.User", "CategoryUserOf")
-                        .WithMany()
-                        .HasForeignKey("CategoryUserOfId");
                 });
 
             modelBuilder.Entity("Project_P34.DataAccess.Entity.ShoppingCart", b =>

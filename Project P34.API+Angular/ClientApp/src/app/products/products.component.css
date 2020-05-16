@@ -57,13 +57,17 @@ ul {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,.1);
+  background: rgba(0, 0, 0,.1);
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
 
 .product-wrap:hover .shadow {
   opacity: 1;
+}
+
+.product-block {
+  border: white 1px solid;
 }
 
 .actions {
@@ -80,7 +84,7 @@ ul {
 }
 
 .actions a {
-  background: #29586c;
+  background: green;
   color: white;
   display: block;
   height: 36px;
@@ -108,8 +112,8 @@ ul {
 }
 
 .actions a:hover {
-  background: #b3e1ee;
-  color: #29586c;
+  background: white;
+  color: green;
 }
 
 .product-wrap:hover .add-to-cart {
@@ -163,5 +167,34 @@ ul {
 .price {
   font-weight: bold;
   font-size: 16px;
-  color: #29586c;
+  color: tomato;
+}
+
+/*Categories*/
+
+.menu {
+  margin-top: 1%;
+  list-style-type: none;
+  background-color: green;
+  padding: 7px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.menu-item {
+  padding: 5px;
+}
+
+.category {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 2px;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.category:hover {
+  background-color: #ffffff;
+  text-decoration: underline !important;
+  color: #006600 !important;
 }

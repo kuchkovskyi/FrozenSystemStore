@@ -1,6 +1,6 @@
 .title {
   text-align: center;
-  color: #29586c;
+  color: white;
   margin: 10px;
   font-weight: 100;
 }
@@ -9,10 +9,14 @@
   background-color: white;
   width: 250px;
   padding: 10px;
-  border: #b3e1ee 1px solid;
+  border: #fff 1px solid;
   border-radius: 10px;
   float: left;
   margin: 10px;
+}
+
+.product-block:hover {
+  border: #006600 1px solid;
 }
 
 .image-of-product {
@@ -22,7 +26,7 @@
 }
 
 .name-of-product {
-  color: #29586c;
+  color: #555;
   text-align: center;
   margin: 10px;
 }
@@ -34,7 +38,7 @@
   text-decoration: underline;
 }
 
-.nav { background-color: #29586c; border-radius: 10px; }
+.nav { background-color: #006600; border-radius: 10px; }
 
 .nav-item {
   color: white;
@@ -47,8 +51,16 @@
 
 .last-item { border-radius: 0px 10px 10px 0px; }
 
-.nav-item:hover { background-color: #b3e1ee; color: #29586c; }
+.nav-item:hover { background-color: #00ff00; color: #006600; }
 
 .shadow { border-radius: 10px; }
 
 .shadow:hover { box-shadow: 10 3 0 gray; }
+
+.empty {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: green;
+}

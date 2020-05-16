@@ -17,6 +17,10 @@ namespace Project_P34.DataAccess
 
         public DbSet<Category> categories { get; set; }
 
+        public DbSet<ShoppingCart> shoppingCarts { get; set; }
+
+        public DbSet<FavoriteList> favoriteLists { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<User>()
@@ -24,9 +28,14 @@ namespace Project_P34.DataAccess
                 .WithOne(t => t.User)
                 .HasForeignKey<UserMoreInfo>(ui => ui.Id);
 
+            builder.Entity<ShoppingCart>()
+                .HasKey(k => new { k.UserId, k.ProductId });
+
+            builder.Entity<FavoriteList>()
+               .HasKey(k => new { k.FavoriteUserId, k.FavoriteProductId });
+
             base.OnModelCreating(builder);
         }
-
 
     }
 }

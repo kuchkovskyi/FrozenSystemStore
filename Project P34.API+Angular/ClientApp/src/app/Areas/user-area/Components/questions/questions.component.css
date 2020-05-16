@@ -1,7 +1,7 @@
 .col-md-8 {
   margin-left: auto;
   margin-right: auto;
-  background-color: aliceblue;
+  background-color: rgba(0, 102, 0, 0.9);
   border-radius: 10px;
   margin-top: 1%;
   margin-bottom: 1%;
@@ -14,12 +14,12 @@
 }
 
 .fa-check-square {
-  color: green;
+  color: #00ff00;
 }
 
 .subtitle {
   text-align: center;
-  color: #29586c;
+  color: #fff;
   font-weight: 200;
   margin-bottom: 20px;
   text-decoration: underline;
@@ -31,20 +31,28 @@
 }
 
 .subsubtitle {
-  color: #29586c;
+  color: #fff;
   font-weight: 200;
 }
 
 .text, li {
-  color: #29586c;
+  color: #fff;
 }
 
 hr {
-  background-color: #29586c !important;
+  background-color: #fff !important;
   width: 95% !important;
 }
 
 .warning {
   color: red;
   font-weight: 600;
+}
+
+.linky {
+  color: #00ff00;
+}
+
+.linky:hover {
+  color: white;
 }

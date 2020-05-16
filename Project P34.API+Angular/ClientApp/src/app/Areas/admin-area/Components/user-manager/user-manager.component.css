@@ -1,5 +1,5 @@
 thead {
-  background-color: #00cc00;
+  background-color: green;
   color: #ffffff;
 }
 
@@ -13,8 +13,7 @@ thead {
 }
 
 .body-tr {
-  border-bottom: #00cc00 1px solid;
-  background-color: #00cc00;
+  background-color: green;
   color: #ffffff;
   font-weight: 500;
 }
@@ -22,7 +21,6 @@ thead {
 .body-tr:hover {
   background-color: #00cc00;
   color: #ffffff;
-  border-bottom: #ffffff 1px solid;
 }
 
 .fa {
